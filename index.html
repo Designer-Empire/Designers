@@ -15,16 +15,47 @@
 
     header {
       background: linear-gradient(to right, #000000, #434343);
-      padding: 25px 20px;
-      text-align: center;
+      padding: 20px;
       color: white;
+      position: relative;
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     }
 
     header h1 {
       margin: 0;
-      font-size: 28px;
-      letter-spacing: 1px;
+      font-size: 24px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 15px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: rgba(255,255,255,0.15);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 22px;
+      margin-top: 30px;
+      color: #222;
     }
 
     .gallery {
@@ -61,6 +92,7 @@
       height: 35px;
       border-radius: 50%;
       margin-left: 10px;
+      background-color: #ccc;
     }
 
     .item-header strong {
@@ -82,7 +114,8 @@
       flex-wrap: wrap;
       padding: 30px 20px;
     }
-التصميم الثاني    .btn {
+
+    .btn {
       flex: 1;
       min-width: 150px;
       padding: 13px;
@@ -113,38 +146,49 @@
   </style>
 </head>
 <body>
-  
-<header>
-  <h1>تصميم بكجات ديسكورد بجودة عالية و أسعار منافسة</h1>
-</header>
-<h1>أمثلة على تصاميمنا</h1>
-  <p>
-<section class="gallery">
-  <div class="item">
-    <div class="item-header">
-      <img src="" alt="تصميم 1">
-      <strong>تصميم 1</strong>
+
+  <header>
+    <div class="navbar">
+      <h1>متجر تصاميم وبكجات ديسكورد</h1>
+      <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#works">أعمالنا</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
     </div>
-    <p>البكج الأول</p>
-  </div>
+  </header>
 
-  <div class="item">
-    <div class="item-header">
-      <img src="" alt="تصميم 2">
-      <strong>تصميم 2</strong>
+  <section id="home">
+    <h2 class="section-title">مرحباً بك في متجرنا!</h2>
+  </section>
+
+  <section id="works" class="gallery">
+    <h2 class="section-title">أمثلة على تصاميمنا</h2>
+    <div class="item">
+      <div class="item-header">
+        <img src="" alt="تصميم 1">
+        <strong>تصميم 1</strong>
+      </div>
+      <p>بكج احترافي يحتوي على رتب وقنوات منظمة</p>
     </div>
-    <p>التصميم الثاني</p>
-  </div>
-</section>
 
-<section class="buttons">
-  <a class="btn" href="https://discord.gg/kRchfkhKng" target="_blank">انضم إلى السيرفر</a>
-  <a class="btn" href="https://discord.com/users/1262001887016783976" target="_blank">تواصل معي خاص</a>
-</section>
+    <div class="item">
+      <div class="item-header">
+        <img src="" alt="تصميم 2">
+        <strong>تصميم 2</strong>
+      </div>
+      <p>بكج شامل يحتوي على بوتات ولوحات متكاملة</p>
+    </div>
+  </section>
 
-<footer>
-  جميع الحقوق محفوظة © 2025
-</footer>
+  <section id="contact" class="buttons">
+    <a class="btn" href="https://discord.gg/kRchfkhKng" target="_blank">انضم إلى السيرفر</a>
+    <a class="btn" href="https://discord.com/users/1262001887016783976" target="_blank">تواصل معي خاص</a>
+  </section>
+
+  <footer>
+    جميع الحقوق محفوظة © 2025
+  </footer>
 
 </body>
 </html>
