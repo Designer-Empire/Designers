@@ -15,40 +15,16 @@
 
     header {
       background: linear-gradient(to right, #000000, #434343);
-      padding: 20px;
+      padding: 25px 20px;
+      text-align: center;
       color: white;
-      position: relative;
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     }
 
     header h1 {
       margin: 0;
-      font-size: 24px;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    nav {
-      display: flex;
-      gap: 15px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 12px;
-      border-radius: 6px;
-      font-size: 15px;
-      transition: background 0.3s ease;
-    }
-
-    nav a:hover {
-      background-color: rgba(255,255,255,0.15);
+      font-size: 26px;
+      letter-spacing: 1px;
     }
 
     .section-title {
@@ -148,22 +124,12 @@
 <body>
 
   <header>
-    <div class="navbar">
-      <h1>متجر تصاميم وبكجات ديسكورد</h1>
-      <nav>
-        <a href="#home">الرئيسية</a>
-        <a href="#works">أعمالنا</a>
-        <a href="#contact">تواصل معنا</a>
-      </nav>
-    </div>
+    <h1>متجر تصاميم وبكجات ديسكورد بجودة عالية وأسعار مميزة</h1>
   </header>
 
-  <section id="home">
-    <h2 class="section-title">مرحباً بك في متجرنا!</h2>
-  </section>
-
-  <section id="works" class="gallery">
+  <section class="gallery">
     <h2 class="section-title">أمثلة على تصاميمنا</h2>
+
     <div class="item">
       <div class="item-header">
         <img src="" alt="تصميم 1">
@@ -181,7 +147,7 @@
     </div>
   </section>
 
-  <section id="contact" class="buttons">
+  <section class="buttons">
     <a class="btn" href="https://discord.gg/kRchfkhKng" target="_blank">انضم إلى السيرفر</a>
     <a class="btn" href="https://discord.com/users/1262001887016783976" target="_blank">تواصل معي خاص</a>
   </section>
